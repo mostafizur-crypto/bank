@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body>
+    <section>
+        <h1 class="font-bold text-6xl text-center">Welcome To <span class="text-red-500">My Bank</span></h1>
+
+        <!-- main div-->
+         <div class="flex justify-center mt-20 space-x-24">
+             <!-- child div 1-->
+              <div class="bg-green-500 text-white w-56 p-3 rounded-md text-center">
+                  <h3 class="text-[1.3rem] mb-2">Deposit</h3>
+                  <h1 class="text-4xl font-semibold">$<span id="diposit-total">00</span></h1>
+              </div>
+                <!-- child div 2-->
+              <div class="bg-red-500 text-white w-56 p-3 rounded-md text-center">
+                  <h3 class="text-[1.3rem] mb-2">Withdraw</h3>
+                  <h1 class="text-4xl font-semibold">$<span id="withdraw-total">00</span></h1>
+              </div>
+                <!-- child div 3-->
+              <div class="bg-blue-500 text-white w-56 p-3 rounded-md text-center">
+                  <h3 class="text-[1.3rem] mb-2">Total Money</h3>
+                  <h1 class="text-4xl font-semibold">$<span id="money-total">3754</span></h1>
+              </div>
+              
+         </div>
+    </section>
+
+    <!-- Text fild section -->
+     <section>
+         <div class="flex gap-10 mt-20 justify-center">
+            <!-- diposit area -->
+            <div class="flex flex-col items-center gap-4 bg-green-500 p-5 w-96 rounded-md">
+                <h1 class="text-3xl font-semibold text-white">Please Diposit</h1>
+                <input class="p-2 rounded-sm w-4/6 items-center text-[1.2rem]" type="text" id="user-diposit" placeholder="$ Enter your money">
+                <button id="diposit" class="text-white p-2 rounded-md bg-green-300 hover:bg-slate-500 w-56 text-[1.2rem] font-bold">Diposit</button>
+           </div>
+
+           <!-- Withdraw area -->
+           <div class="flex flex-col items-center gap-4 bg-red-500 p-5 w-96 rounded-md">
+            <h1 class="text-3xl font-semibold text-white">Please Withdraw</h1>
+            <input class="p-2 rounded-sm w-4/6 items-center text-[1.2rem]" type="text" id="user-withdraw" placeholder="$ Enter your money">
+            <button id="Withdraw" class="text-white p-2 rounded-md bg-red-400 hover:bg-slate-500 w-56 text-[1.2rem] font-bold">Withdraw</button>
+       </div>
+         </div>
+     </section>
+     <script src="./diposit.js"></script>
+</body>
+</html>
